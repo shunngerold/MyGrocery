@@ -1,1 +1,1 @@
-web: php artisan serve
+web: web: php artisan serve --port=7122 --host=containers-us-west-33.railway.app
