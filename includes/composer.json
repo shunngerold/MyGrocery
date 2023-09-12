@@ -1,0 +1,11 @@
+{
+    "name": "san-san/includes",
+    "authors": [
+        {
+            "name": "Shunn Villagonza BSCS 4"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.22"
+    }
+}

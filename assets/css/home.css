@@ -1,0 +1,289 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+
+/* Padding below the footer and lighter body text */
+
+body {
+    animation: animateIn 0.70s;
+    font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+}
+
+
+/* profile button */
+
+body header>.container>.contents a {
+    margin-left: 10px;
+}
+
+body header>.container>.contents a>img.rounded-circle {
+    border-radius: 3px black;
+}
+
+
+/* Adjust the margin of main tag - for fixed header */
+
+body main {
+    margin-top: 6rem;
+}
+
+
+/* Adjust product alignment */
+
+#product-desc {
+    text-align: left;
+}
+
+#product-price {
+    text-align: right;
+}
+
+
+/* navigator */
+
+body nav.navbar {
+    background-color: #59981A;
+}
+
+
+/* navigator links*/
+
+body nav.navbar div.collapse ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+body nav.navbar div.collapse ul li a:hover {
+    text-decoration: none;
+    color: #31352E;
+}
+
+
+/* Animation */
+
+@keyframes animateIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transition-timing-function: ease-in;
+    }
+}
+
+
+/* Welcome Title
+---------------------------------------------------- */
+
+#welcome-title {
+    font-weight: 900;
+    color: #59981A;
+}
+
+#description-title {
+    text-align: center;
+}
+
+#product-links {
+    color: #59981A;
+    text-decoration: none;
+}
+
+
+/* Product Selection 
+------------------------------------------------- */
+
+#products-selection {
+    font-weight: bolder !important;
+    color: #59981A;
+    font-size: 25px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+/* Centered text */
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: auto;
+    font-weight: bold;
+}
+
+.card {
+    background-color: #000;
+    border: none;
+}
+
+.card img {
+    transition: 300ms;
+}
+
+.card:hover img {
+    opacity: 0.4;
+}
+
+
+/* HERO BANNER 
+----------------------------------------------------*/
+
+#hero {
+    background: linear-gradient(to right, #59981A 10%, #3D550C 80%);
+}
+
+
+/* RESPONSIVE
+---------------------------------------------------- */
+
+@media screen and (max-width: 1000px) {
+    body main {
+        margin-top: 15rem;
+    }
+    centered {
+        font-size: 30px !important;
+    }
+    .faq-nav {
+        margin-top: 8rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body main {
+        margin-top: 15rem;
+    }
+    centered {
+        font-size: 25px !important;
+    }
+    .faq-nav {
+        margin-top: 8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body main {
+        margin-top: 15rem;
+    }
+    centered {
+        font-size: 20px !important;
+    }
+    .faq-nav {
+        margin-top: 8rem;
+    }
+}
+
+
+/* FAQS STYLES */
+
+.faq-nav {
+    flex-direction: column;
+    margin: 0 0 32px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 10px rgba(10, 10, 10, 0.15);
+}
+
+.faq-nav .nav-link {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 13px 16px;
+    background-color: #fff;
+    border: 0;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    color: rgba(0, 0, 0, 0.87);
+    transition: background-color 0.2s ease;
+    -webkit-transition: background-color 0.2s ease;
+    -moz-transition: background-color 0.2s ease;
+    -ms-transition: background-color 0.2s ease;
+    -o-transition: background-color 0.2s ease;
+}
+
+.faq-nav .nav-link:hover {
+    background-color: #59981A;
+    color: #fff;
+}
+
+.faq-nav .nav-link.active {
+    background-color: #59981A;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.faq-nav .nav-link:last-of-type {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom: 0;
+}
+
+.faq-nav .nav-link i.mdi {
+    margin-right: 5px;
+    font-size: 18px;
+    position: relative;
+}
+
+.tab-content {
+    box-shadow: 0 8px 10px rgba(22, 22, 22, 0.15);
+}
+
+.tab-content .card {
+    border-radius: 0;
+}
+
+.tab-content .card-header {
+    padding: 15px 16px;
+    border-radius: 0;
+    background-color: none;
+}
+
+.tab-content .card-header h5 {
+    margin: 0;
+}
+
+.tab-content .card-header h5 button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.87);
+    text-align: left;
+    white-space: normal;
+    text-decoration: none;
+}
+
+.tab-content div.card > div.card-header:hover, 
+.tab-content h5 button:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #59981A;
+    border: none;
+}
+
+.tab-content .card-body p {
+    color: #616161;
+}
+
+.tab-content .card-body p:last-of-type {
+    margin: 0;
+}
+
+.accordion>.card:not(:first-child) {
+    border-top: 0;
+}
+
+.collapse.show .card-body {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-body {
+    text-align: left;
+}

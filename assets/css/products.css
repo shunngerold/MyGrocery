@@ -1,0 +1,126 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    animation: animateIn 0.70s;
+    font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  }
+  
+  /* profile button */
+  body header > .container > .contents a {
+    margin-left: 10px;
+  }
+  
+  body header > .container > .contents a > img.rounded-circle {
+    border-radius: 3px black;
+  }
+  
+  /* Adjust the margin of main tag - for fixed header */
+  body main {
+    margin-top: 2.6rem;
+  }
+
+  body main center {
+    margin-top: 8rem;
+  }
+  
+  /* Adjust product alignment */
+  #product-desc {
+    text-align: left;
+  }
+  
+  #product-price {
+    text-align: right;
+  }
+  
+  /* navigator */
+  body nav.navbar {
+    background-color: #59981A;
+  }
+  
+  /* navigator links*/
+  body nav.navbar div.collapse ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  body nav.navbar div.collapse ul li a:hover {
+    text-decoration: none;
+    color: #31352E;
+  }
+
+  /* Animation */
+  @keyframes animateIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+      transition-timing-function: ease-in;
+    }
+  }
+  /* Product title */
+  #product-title {
+      color: #3D550C;
+      text-decoration: none;
+  }
+  /* IMAGE */
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .card {
+    background-color: #000;  
+    border: none;
+  }
+  
+  .card img {
+    opacity: 0.4;
+    height: 250px;
+  }
+
+  /* RESPONSIVE
+  ---------------------------------------------------- */
+  @media screen and (max-width: 1000px) {
+    body main {
+      margin-top: 15rem;
+    }
+  
+    centered {
+      font-size: 30px !important;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    body main {
+      margin-top: 15rem;
+    }
+  
+    centered {
+      font-size: 25px !important;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    body main {
+      margin-top: 15rem;
+    }
+  
+    centered {
+      font-size: 20px !important;
+    }
+  }

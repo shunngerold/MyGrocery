@@ -1,0 +1,37 @@
+
+body {
+    animation: animateIn 0.40s;
+    font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+}
+
+body main {
+    margin-top: 8rem;
+}
+/* navigator */
+body nav.navbar {
+    background-color: #59981A;
+}
+/* navigator links*/
+body nav.navbar div.collapse ul li a {
+    font-size: x-large;
+    margin-left: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+body nav.navbar div.collapse ul li a:hover {
+    text-decoration: none;
+    color: #31352E;
+}
+
+/* Animation */
+@keyframes animateIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+      transition-timing-function: ease-in;
+    }
+}
